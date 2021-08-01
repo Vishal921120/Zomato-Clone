@@ -6,7 +6,7 @@ const MenuSchema = new mongoose.Schema({
             name:{type:String, required: true},
             items:[
                 {
-                    type: mongoose.Types.Objectid,
+                    type: mongoose.Types.ObjectId,
                     ref: "Foods",
                 },
             ],
@@ -14,7 +14,7 @@ const MenuSchema = new mongoose.Schema({
     ],
     recommended:[
         {
-            type: mongoose.Types.Objectid,
+            type: mongoose.Types.ObjectId,
             ref: "Foods",
             unique: true,
         },
